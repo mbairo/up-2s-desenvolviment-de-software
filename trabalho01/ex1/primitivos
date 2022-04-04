@@ -1,0 +1,39 @@
+boolean
+Tamanho em bytes: ≃ 0,125
+Faixa de valores: true ou false
+Valor default da variável: false
+
+Char
+Tamanho em bytes: 2-bytes
+Faixa de valores: '\u0000' ou 0  até '\uffff' ou 65,535
+Valor default da variável: '\u0000'
+
+byte
+Tamanho em bytes: 1-byte ou 8-bits
+Faixa de valores: -128 até 127
+Valor default da variável: 0
+
+Short
+Tamanho em bytes: 2-bytes
+Faixa de valores: -32,768 até 32,767
+Valor default da variável: 0
+
+int
+Tamanho em bytes: 4-bytes
+Faixa de valores: -2³¹ até 2³¹-1
+Valor default da variável: 0
+
+float
+Tamanho em bytes: 4-bytes
+Faixa de valores: +127 até -126
+Valor default da variável: 0.0f
+
+long
+Tamanho em bytes: 8-bytes
+Faixa de valores: -2^63 and a maximum value of 2^63-1
+Valor default da variável: 0L
+
+double
+Tamanho em bytes: 8-bytes
+Faixa de valores: +1023 até -1022
+Valor default da variável: 0.0d
