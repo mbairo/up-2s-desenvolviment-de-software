@@ -21,7 +21,7 @@ public class Advinhacao {
 
         if( palpite == numSorteado){
             System.out.println("Você acertou, Parabéns!");
-        } else{
+        } else
             System.out.println("Não tem chororô, esse jogo acabou!");
         }
         scanner.close();
