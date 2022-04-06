@@ -22,6 +22,17 @@ public class Loteria{
 
         } while (contador < numerosEscolhidos.length);
 
+        int numerosRepetidos = 0;
+        for (int i = 0; i < numerosEscolhidos.length; i++) {
+            for (int j = 0; j < numerosEscolhidos.length; j++) {
+                if (numerosEscolhidos[i] == numerosEscolhidos[j]) {
+                   numerosRepetidos++;
+                }
+           } 
+        }
+
+        if (numerosRepetidos <= 6) { 
+
         System.out.println("\n************************************\nSeus números escolhidos foram: ");
 
         for (int i = 0; i < numerosEscolhidos.length; i++) {
@@ -62,5 +73,9 @@ public class Loteria{
             System.out.println("Você não ganhou nada!");
          }
          System.out.println("\n");
+
+        } else{
+            System.out.println("Jogo invalido! Favor não repetir números: ");
+        }
     }
 }
