@@ -12,7 +12,7 @@ public class Polinomial
         do {
           
             System.out.print("Informe o coeficiente: ");
-            int grau = scanner.nextInt();
+            int coeficiente = scanner.nextInt();
     
         } while (condition);
 
