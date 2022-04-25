@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class calendario {
+public class Calendario {
     public static String mostarNomeMesIf(int mes){
         String nomeMes = "";
         if (mes == 1) {
