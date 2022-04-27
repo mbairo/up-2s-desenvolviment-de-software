@@ -1,0 +1,105 @@
+ Conteúdo do exercício
+
+    Esse trabalho consiste em 7 exercícios que podem ser respondidos em dupla ou individualmente. Quando o exercício se tratar de um programa, use o Visual Studio Code e um SDK Java (sugestão do professor) para criar e testar o programa, e assim que você achar que ele funciona adequadamente, copie e cole o código no espaço destinado a resposta do exercício, incluindo todos os comentários de código. Caso tenha feito em dupla, por favor, não esqueça de identificar os autores no cabeçalho do seu código. Não se preocupe com a indentação do código colado.
+    Pergunta 1
+    10 pontos
+
+    Observe a figura abaixo da tipagem de dados da linguagem Java:
+
+
+    Tipo de Dado em Java - Javatpoint﻿﻿
+
+
+    Para cada tipo de dado primitivo, informe (i) o tamanho em bytes, (ii) faixa de valores e (iii) o valor default da variável. Utilize o seguinte material de consulta: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+
+---------------------------------------------------------------------------------------------------
+    Pergunta 2
+    10 pontos
+
+    Criar uma classe Calculadora com os métodos soma, subtração, multiplicação e divisão. Siga as instruções:
+
+
+        Cada método deve receber dois inteiros e retornar o resultado: public static int operacao(int a, int b).
+        No método main, fazer uma chamada a cada um dos métodos desenvolvidos e apresentar o resultado na tela.
+        Use o comando System.out.println(...) para mostrar o resultado na tela.
+
+
+---------------------------------------------------------------------------------------------------
+    Pergunta 3
+    10 pontos
+
+    Faça um programa que calcule o fatorial de um número inteiro informado pelo usuário. Validar a entrada pois o número precisa ser positivo.
+
+
+    n fatorial igual a abre chaves atributos de tabela alinhamento de coluna left espaçamento de coluna 1.4ex fim dos atributos linha com célula com n asterisco parêntese esquerdo n menos 1 parêntese direito asterisco parêntese esquerdo n menos 2 parêntese direito asterisco... asterisco 1 fim da célula célula com vírgula espaço s e espaço n maior que 0 fim da célula linha com 1 célula com vírgula espaço s e espaço n igual a 0 fim da célula fim da tabela fecha﻿﻿
+
+
+    ---------------------------------------------------------------------------------------------------
+    Pergunta 4
+    10 pontos
+
+    Na matemática, a sucessão de Fibonacci (ou sequência de Fibonacci), é uma sequência de números inteiros, começando normalmente por 0 e 1, na qual cada termo subsequente corresponde à soma dos dois anteriores. (Fonte: https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci).
+
+
+    A sequência de Finonacci é: 0,1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, ...
+
+
+    Em sua forma recursiva é:
+
+
+    f parêntese esquerdo n parêntese direito igual a f parêntese esquerdo n menos 1 parêntese direito mais f parêntese esquerdo n menos 2 parêntese direito﻿﻿
+
+
+    Onde:
+
+
+    f parêntese esquerdo 0 parêntese direito igual a 0f parêntese esquerdo 1 parêntese direito igual a 1﻿﻿
+
+
+    Nesse exercício, você deve fazer um programa que calcula o n-ésimo termo da sequência de Fibonacci. O programa lê o valor de n e calcula o valor de f(n). O valor de n deve ser inteiro positivo e o programa deve validar a entrada. Casos em que n = 0 ou n = 1 devem ser tratados.
+
+
+---------------------------------------------------------------------------------------------------
+    Pergunta 5
+    20 pontos
+
+    Faça um programa que leia os coeficientes de uma função polinomial, armazene em um vetor e calcule o valor de y e y' dado x.
+
+
+    y igual a f parêntese esquerdo x parêntese direito igual a a com n subscrito x à potência de n mais a com n menos 1 subscrito fim do subscrito x à potência de n menos 1 fim do exponencial mais a com n menos 2 subscrito fim do subscrito x à potência de n menos 2 fim do exponencial mais... mais a com 1 subscrito x à potência de 1 mais a com 0 subscrito x à potência de 0﻿﻿
+
+    y apóstrofo igual a f apóstrofo parêntese esquerdo x parêntese direito igual a n a com n subscrito x à potência de n menos 1 fim do exponencial mais parêntese esquerdo n menos 1 parêntese direito a com n menos 1 subscrito fim do subscrito x à potência de n menos 2 fim do exponencial mais... mais 2 a com 2 subscrito x à potência de 1 mais a com 1 subscrito x à potência de 0﻿﻿
+
+
+        O programa pergunta o grau da função (n).
+        Pede para o usuário digitar os coeficientes.
+        Armazena os coeficientes em um vetor.
+        Pede para o usuário digitar um valor de x.
+        Calcula o valor de y e y' na abscissa x.
+
+---------------------------------------------------------------------------------------------------
+    Pergunta 6
+    20 pontos
+
+    Faça um jogo de adivinhação em que programa sorteia um número inteiro positivo de 0 a 100 e o jogador tem 10 tentativas (vidas) para acertar. Em cada tentativa, lê o número digitado pelo jogador e mostra uma dica. Essa dica consiste em informar se o número digitado é maior ou menor que o número sorteado. Caso o jogador acerte, o jogo termina informando que o jogador venceu, caso as vidas acabem, o jogo termina informando que o jogador perdeu. O programa deve validar o número digitado pois o valor precisa ser entre 0 e 100.
+
+
+ ---------------------------------------------------------------------------------------------------
+    Pergunta 7
+    20 pontos
+
+    Faça um jogo de loteria! O programa sorteia 6 números (chamadas dezenas) de 1 a 60 e pede para o jogador escolher 6 números de 1 a 60. O programa compara os números escolhidos com os números sorteados, mostra as dezenas sorteadas, as dezenas escolhidas pelo jogador e mostra o prêmio conforme abaixo:
+
+
+        6 acertos: R$ 1.000.000,00
+        5 acertos: R$ 250.000,00
+        4 acertos: R$ 50.000,00
+        3 acertos: nada.
+        2 acertos: nada.
+        1 acerto: nada.
+
+
+    Obs.: validar os números digitados pelo jogador, ou seja, devem ser entre 1 e 60.
+
+
+Conteúdo adicional
