@@ -2,21 +2,6 @@ import java.util.Scanner;
 
 import javax.lang.model.util.ElementScanner6;
 
-// ▪ Transformar o programa do exercício 1 para um sistema que permita ler a
-// entrada de dados pelo usuário em um vetor durante execução;
-// ▪ Permitir que o usuário informe, primeiro, os dados de 5 (cinco) alunos e depois
-// de capturados os dados, imprimir o relatório final com todos os dados:
-// Matrícula: xxxxx
-// Nome: xxxxx xxxxx
-// Aprovado: ( x ) Sim ( ) Não
-// Nota final: xxxxx
-
-// ARRAY >>> https://blog.betrybe.com/java/java-array/#2
-// ARRAY >>> https://www.devmedia.com.br/trabalhando-com-arrays-em-java/25530
-
-
-
-
 // erro ao digitar o nome, se digitar só números dá mais ou menos certo... arrumar depois
 public class NotaFinalArray{
     public static void main(String[] args) {
