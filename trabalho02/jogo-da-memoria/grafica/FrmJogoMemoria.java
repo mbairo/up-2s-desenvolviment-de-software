@@ -7,6 +7,7 @@ import logica.JogoMemoria;
 
 import java.awt.Dimension;
 import java.awt.GridLayout;
+import java.util.Timer;
 public class FrmJogoMemoria extends JFrame {
 
     // utilizar o BtnPeca que eu criei
@@ -20,8 +21,9 @@ public class FrmJogoMemoria extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         setSize(new Dimension(400, 400));
-        setLocationRelativeTo(null); // setLocation é depois, pois primeiramente é preciso saber o setZise para calcular o po
+        setLocationRelativeTo(null); // setLocation é depois, pois primeiramente é preciso saber o setZise para calcular a posição
         setTitle("Jogo da Memória");
+        
 
         // iniciar logica do jogo
         jogo = new JogoMemoria();
@@ -30,8 +32,8 @@ public class FrmJogoMemoria extends JFrame {
 
 
         //construção da parte visual
-        tabuleiro = new BtnPeca [4][4];
-        setLayout(new GridLayout (4,4,10,10));
+        tabuleiro = new BtnPeca [4][4]; // Linhas e Colunas
+        setLayout(new GridLayout (4,4,10,10)); // Linhas Colunas e Margem/pading
 
         ActionConferir action = new ActionConferir(tabuleiro);
 
@@ -53,6 +55,10 @@ public class FrmJogoMemoria extends JFrame {
             }
         }
     }
+
+
+
+    
     
     public void ocultarTabuleiro() {
 

@@ -13,6 +13,5 @@ public class ProgamaPrincipal {
             ex.printStackTrace();
         }
         frm.ocultarTabuleiro();
-    }
-    
+    }   
 }
