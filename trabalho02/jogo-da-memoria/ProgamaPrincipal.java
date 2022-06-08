@@ -1,5 +1,5 @@
 import java.net.FileNameMap;
-
+import javax.swing.JOptionPane;
 import grafica.FrmJogoMemoria;
 
 public class ProgamaPrincipal {
@@ -7,11 +7,14 @@ public class ProgamaPrincipal {
         FrmJogoMemoria frm= new FrmJogoMemoria();
         frm.setVisible(true);
         frm.mostarTabuleiro();
+        
         try {
             Thread.sleep(5000);
+            
         } catch (InterruptedException ex){
             ex.printStackTrace();
         }
-        frm.ocultarTabuleiro();
-    }   
+        frm.ocultarTabuleiro();     
+    }
+    
 }

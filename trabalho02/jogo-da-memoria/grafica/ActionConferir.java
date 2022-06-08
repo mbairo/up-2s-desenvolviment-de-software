@@ -1,14 +1,16 @@
 package grafica;
 
 import java.awt.event.ActionEvent;
+import java.util.Timer;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
 
-public class ActionConferir extends AbstractAction{ // Ele "herda" action performace -clique do botão-
+public class ActionConferir extends AbstractAction{ // ele "herda action performace "clique do botão"
     private boolean aguardando;
     private BtnPeca primeiraPeca;
     private BtnPeca[][] tabuleiro;
     private int pontuacao;
+    private int erros;
 
     public ActionConferir(BtnPeca[][] tabuleiro ){
         this.tabuleiro = tabuleiro;
@@ -20,11 +22,12 @@ public class ActionConferir extends AbstractAction{ // Ele "herda" action perfor
         
         BtnPeca pecaAtual = (BtnPeca) e.getSource();
         if (aguardando){
-            // Estado aguardando logica para conferir o valor das peças 
-            // cenferir se é fim de jogo
+            // estado aguardando
+            //logica para conferir o valor das pecas 
+            // conferir se é fim de jogo
 
             if (primeiraPeca == pecaAtual) {
-                pecaAtual.mostrar(); // deixar selecionado com o primeiro click
+                pecaAtual.mostrar(); // deixar selecionado o primeiro click
                 return;
             }
 
@@ -45,11 +48,13 @@ public class ActionConferir extends AbstractAction{ // Ele "herda" action perfor
                     }
                 }
                 if (contador == 16) {
-                    JOptionPane.showMessageDialog(null, String.format("Fim de jogo! Pontuação: %d", pontuacao), "JOgo da memoria", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, String.format("Fim de jogo! Pontuação: %d \nErros: %d", pontuacao, erros), "*Jogo da memoria*", JOptionPane.INFORMATION_MESSAGE);
+
                 } 
             } else {
                     // condição de erro
                     pontuacao -= 3; 
+                    erros += 1;
                     new Thread() {
                         public void run() {
                             pecaAtual.mostrar();
@@ -64,6 +69,7 @@ public class ActionConferir extends AbstractAction{ // Ele "herda" action perfor
                     }.start();
                 }
                 aguardando = false;
+                
         } else {
             //estado parado
             primeiraPeca = pecaAtual;
