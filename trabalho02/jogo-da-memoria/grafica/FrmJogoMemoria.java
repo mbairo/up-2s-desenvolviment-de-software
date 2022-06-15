@@ -28,7 +28,7 @@ public class FrmJogoMemoria extends JFrame {
 
         int [] [] tabuleiroNumero = jogo.getTabuleiroNumero(); // foi criado o jogoMemoria get
 
-        //construção da parte visual
+        //construção da parte visual.
         tabuleiro = new BtnPeca [4][4];
         setLayout(new GridLayout (4,4,10,10));
 
@@ -61,7 +61,4 @@ public class FrmJogoMemoria extends JFrame {
             }
         }
     }
-
-
-
 }

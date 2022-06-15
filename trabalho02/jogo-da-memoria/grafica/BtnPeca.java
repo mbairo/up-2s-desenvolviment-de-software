@@ -24,3 +24,5 @@ public class BtnPeca extends JToggleButton{
         return numero;
     }
 }
+
+//

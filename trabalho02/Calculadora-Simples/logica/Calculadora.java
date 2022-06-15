@@ -10,7 +10,7 @@ public class Calculadora{
         this.y = y;
     }
 
-    //parte que realiza a operação
+    //parte que realiza a operação.
     public double somar() {
         return x + y;
     }

@@ -18,7 +18,7 @@ public class ActionConferir extends AbstractAction{ // ele "herda action perform
 
     @Override
     public void actionPerformed(ActionEvent e){
-        // TODO Auto-generated method stub
+        // TODO Auto-generated method stub.
         
         BtnPeca pecaAtual = (BtnPeca) e.getSource();
         if (aguardando){
@@ -27,7 +27,7 @@ public class ActionConferir extends AbstractAction{ // ele "herda action perform
             // conferir se é fim de jogo
 
             if (primeiraPeca == pecaAtual) {
-                pecaAtual.mostrar(); // deixar selecionado o primeiro click
+                pecaAtual.mostrar(); // deixar selecionado o primeiro click.
                 return;
             }
 

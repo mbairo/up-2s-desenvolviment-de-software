@@ -20,7 +20,7 @@ public class FrmCalculadoraSimples extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Quando clicar no x
         setSize(new Dimension(320, 120));
         
-        //componentes 
+        //componentes.
         add(new JLabel("x:"));
         add(txtx = new JTextField(10));
          
