@@ -34,7 +34,8 @@ public class FrmCalculadoraSimples extends JFrame {
         add(cbxOperacao = new JComboBox<String>(operacoes)); // vai guardar itens do tipo string
         add(btnCalcular = new JButton("Calcular"));
 
-        ActionCalcular action = new ActionCalcular(txtx, txty, bcxOperacao)
+        // Criar e vincular a action ao botão
+        ActionCalcular action = new ActionCalcular(txtx, txty, cbxOperacao);
         btnCalcular.addActionListener(action);
     }
 }
