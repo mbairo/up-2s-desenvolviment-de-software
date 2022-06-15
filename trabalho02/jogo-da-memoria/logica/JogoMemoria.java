@@ -7,8 +7,8 @@ public class JogoMemoria {
 
     public JogoMemoria(){
         tabuleiroNumero = new int[4][4];
+        
         // sortear os numeros
-
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 tabuleiroNumero [i] [j] = sortearNumero();
