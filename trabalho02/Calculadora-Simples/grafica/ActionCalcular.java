@@ -20,7 +20,7 @@ public class ActionCalcular extends AbstractAction {
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
-        double x = Double.parseDouble(txtx.getText()); // parseDOUBLE de String para double
+        double x = Double.parseDouble(txtx.getText()); // parseDOUBLE de String para double.
         double y = Double.parseDouble(txty.getText());
         Calculadora calc = new Calculadora(x, y);
 
