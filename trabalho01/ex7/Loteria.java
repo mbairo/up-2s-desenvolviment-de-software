@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Loteria{
@@ -45,10 +47,15 @@ public class Loteria{
         int [] dezenas = new int[6];
 
         System.out.println("Os números sorteados foram: ");
+    
 
         for (int i = 0; i < dezenas.length; i++) {
             dezenas[i] = gerador.nextInt(60)+1;
             System.out.print(dezenas[i] + "    ");
+            List<Integer> sorteados = new ArrayList<Integer>(); 
+            sorteados.add(dezenas[i]);
+            System.out.println("sorteados>>>"+ sorteados);
+  
         }
         System.out.println("\n************************************\n");
 

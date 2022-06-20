@@ -1,7 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class Pessoa implements Comparable<Pessoa>{
     private String nome;
     private int idade;

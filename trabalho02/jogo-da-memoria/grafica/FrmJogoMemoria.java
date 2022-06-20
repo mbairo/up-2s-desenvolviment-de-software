@@ -1,16 +1,12 @@
 package grafica;
-
 import javax.swing.JFrame;
-import javax.swing.text.TabableView;
-
-import logica.JogoMemoria;
-
+import logica.JogoMemoria; 
 import java.awt.Dimension;
 import java.awt.GridLayout;
 public class FrmJogoMemoria extends JFrame {
 
-    // utilizar o BtnPeca que eu criei
-    //matri que vai armazenar os botoes
+    // Utilizar o BtnPeca que eu criei
+    // Matriz que vai armazenar os botoes
     private BtnPeca [] [] tabuleiro;
     private JogoMemoria jogo;
 

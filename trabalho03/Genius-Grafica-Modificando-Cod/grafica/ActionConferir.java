@@ -1,14 +1,16 @@
 package grafica;
-import java.awt.event.ActionEvent; 
+
+import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.JOptionPane;
+
 public class ActionConferir extends AbstractAction{ // ele "herda action performace "clique do botão"
     private boolean aguardando;
     private BtnPeca primeiraPeca;
     private BtnPeca[][] tabuleiro;
     private int pontuacao;
     private int erros;
-
+ 
     public ActionConferir(BtnPeca[][] tabuleiro ){
         this.tabuleiro = tabuleiro;
     }

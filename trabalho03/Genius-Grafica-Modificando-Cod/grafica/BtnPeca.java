@@ -1,12 +1,12 @@
 package grafica;
-
-import javax.swing.JToggleButton;
-
-public class BtnPeca extends JToggleButton{
+import javax.swing.JButton;
+public class BtnPeca extends JButton{
 
     private int numero;
 
+    //setBackground(color.red)
     public BtnPeca(int numero) {
+        //setBackground(color.white);
         this.numero = numero;
     }
 
@@ -15,7 +15,7 @@ public class BtnPeca extends JToggleButton{
         setText(Integer.toString(numero));
     }
 
-    public void ocultar(){ 
+    public void ocultar() {
         setSelected(false);
         setText("");
     }
@@ -24,5 +24,4 @@ public class BtnPeca extends JToggleButton{
         return numero;
     }
 }
-
-//contadorcontador
+//

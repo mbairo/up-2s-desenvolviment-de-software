@@ -1,7 +1,5 @@
 package logica;
-
 import java.util.Random;
-
 public class JogoMemoria {
     private int[][] tabuleiroNumero;
 

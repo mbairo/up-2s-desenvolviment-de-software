@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+ 
 public class ProgamaPrincipal {
     public static void main(String[] args) {
-        // instanciar um LIst de Pessoa  // tipagem<>
+        // instanciar um List de Pessoa  // tipagem<>
         List<Pessoa> pessoas = new ArrayList<Pessoa>();
 
         // adicionar objetos na lista
@@ -20,7 +20,7 @@ public class ProgamaPrincipal {
         }
 
         // ordenação
-        System.out.println("\n --------- Ordenação --------\n");
+        System.out.println("\n --------- Ordenação --------- \n");
         Collections.sort(pessoas);
 
         // foreach + print
@@ -29,7 +29,6 @@ public class ProgamaPrincipal {
         }
 
         // criar nova pessoa
-
         Pessoa p = new Pessoa("Gustavo", 38, 80.5, 1.76);
         p.getTelefones().put("residencial", "41 3264-3273");
         p.getTelefones().put("comercial", "41 3234-3276");
